@@ -236,7 +236,7 @@ func (b *backend) getBindDN(cfg *ConfigEntry, c *ldap.Conn, username string) (st
 			return bindDN, fmt.Errorf("LDAP search for binddn failed: %v", err)
 		}
 		if len(result.Entries) != 1 {
-			return bindDN, fmt.Errorf("LDAP search for binddn 0 or not unique")
+			return bindDN, fmt.Errorf("LDAP search for binddn 0 or not unique %+v", result)
 		}
 		bindDN = result.Entries[0].DN
 	} else {
