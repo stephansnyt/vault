@@ -32,6 +32,8 @@ not be required to set the `access_key` and `secret_key` parameters.
 
 - `access_key` `(string: optional)` - When using static credentials, the access key to use
 
+- `nonce` `(string: optional)` - The nonce to include with auth attempt
+
 - `secret_key` `(string: optional)` - When using static credentials, the secret key to use
 
 - `session_token` `(string: optional)` - The session token to use for authentication, if needed
